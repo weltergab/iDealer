@@ -29,27 +29,27 @@
 
     <?php
 
-        include("categoria_bd.php");
+        include("func_crud.php");
 
-        $arrayTodo = listar_todo();
+        $arrayInvest = listar_invest();
 
-        foreach($arrayTodo as $tod){
+        foreach($arrayInvest as $inv){
          
             echo "<tr>";
-            echo "<td>". $tod->cod_corretora ."</td>";
-            echo "<td>". $tod->nome ."</td>";
-            echo "<td>". $tod->preco ."</td>";
-            echo "<td>". $tod->qtd ."</td>";
-            echo "<td>". $tod->data ."</td>";
+            echo "<td>". $inv->cod_corretora ."</td>";
+            echo "<td>". $inv->nome ."</td>";
+            echo "<td>". $inv->preco ."</td>";
+            echo "<td>". $inv->qtd ."</td>";
+            echo "<td>". $inv->data ."</td>";
 
             echo "<td>";
-            echo "<a href='exibir_todo.php?id=". $tod->cod_corretora ."'>";
+            echo "<a href='exibir_investimento.php?id=". $inv->cod ."'>";
             echo "<span class='fa-stack fa-sm' style='color:black'><i class='fas fa-search'></i></span>";
             echo "</a>";
-            echo "<a href='editar_todo.php?id=". $tod->cod_corretora ."'>";
+            echo "<a href='editar_investimento_parte1.php?id=". $inv->cod ."'>";
             echo "<span class='fa-stack fa-sm' style='color:black'><i class='fas fa-edit'></i></span>";
             echo "</a>";
-            echo "<a href='excluir_todo.php?id=". $tod->cod_corretora ."'>";
+            echo "<a href='excluir_investimento.php?id=". $inv->cod ."'>";
             echo "<span class='fa-stack fa-sm' style='color:black'><i class='fas fa-trash'></i></span>";
             echo "</a>";
             echo "</td>";

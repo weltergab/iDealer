@@ -27,24 +27,24 @@
 
     <?php
 
-        include("categoria_bd.php");
+        include("func_crud.php");
 
-        $arrayCategorias = listar_categoria();
+        $arrayCorretoras = listar_corret();
 
-        foreach($arrayCategorias as $cat){
+        foreach($arrayCorretoras as $corret){
             echo "<tr>";
-            echo "<td>". $cat->cod ."</td>";
-            echo "<td>". $cat->nome ."</td>";
-            echo "<td>". $cat->cnpj ."</td>";
+            echo "<td>". $corret->cod ."</td>";
+            echo "<td>". $corret->nome ."</td>";
+            echo "<td>". $corret->cnpj ."</td>";
 
             echo "<td>";
-            echo "<a href='exibir_categoria.php?id=". $cat->cod ."'>";
+            echo "<a href='exibir_corretora.php?id=". $corret->cod ."'>";
             echo "<span class='fa-stack fa-sm' style='color:black'><i class='fas fa-search'></i></span>";
             echo "</a>";
-            echo "<a href='editar_categoria.php?id=". $cat->cod ."'>";
+            echo "<a href='editar_corretora_parte1.php?id=". $corret->cod ."'>";
             echo "<span class='fa-stack fa-sm' style='color:black'><i class='fas fa-edit'></i></span>";
             echo "</a>";
-            echo "<a href='excluir_categoria.php?id=". $cat->cod ."'>";
+            echo "<a href='excluir_corretegoria.php?id=". $corret->cod ."'>";
             echo "<span class='fa-stack fa-sm' style='color:black'><i class='fas fa-trash'></i></span>";
             echo "</a>";
             echo "</td>";

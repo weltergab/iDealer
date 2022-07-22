@@ -11,17 +11,18 @@
     
     <?php
 
-        include("categoria_bd.php");
+        include("func_crud.php");
 
         if(isset($_GET["id"]) == true){
-            $categoria_id = $_GET["id"];
-            $cat = pegar_categoria($categoria_id);
+            $corretora_cod = $_GET["id"];
+            $corret = pegar_corret($corretora_cod);
 
-            echo "<h1>Categoria ID: " . $cat->category_id . "</h1>";
-            echo "<h2>Categoria Nome: " . $cat->name . "</h2>";
+            echo "<h1>Corretora Código: " . $corret->cod . "</h1>";
+            echo "<h2>Corretora Nome: " . $corret->nome . "</h2>";
+            echo "<h2>Corretora CNPJ: " . $corret->cnpj . "</h2>";
             echo "<p>";
-            echo "<a href='editar_categoria.php?id=". $cat->category_id ."'>Editar</a> ";
-            echo "<a href='excluir_categoria.php?id=". $cat->category_id ."'>Excluir</a> ";
+            echo "<a href='editar_categoria.php?id=". $corret->cod ."'>Editar</a> ";
+            echo "<a href='excluir_categoria.php?id=". $corret->cod ."'>Excluir</a> ";
             echo "<p>";
         }else{
             echo "Houve um erro!!! Você deve informar o ID da categoria.";
