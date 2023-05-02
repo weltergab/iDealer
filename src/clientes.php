@@ -13,10 +13,11 @@
 </head>
 
 <body>
+
     <div class="divGeral1">
         <div class="divGeral2">
             <div class="formBoxFora2">
-                <h1>Relatório de Corretoras</h1>
+                <h1>Relatório de Clientes</h1>
 
                 <br>
                 <div>
@@ -27,12 +28,11 @@
                         <thead>
                             <tr>
                                 <th>Código</th>
-                                <th>Nome</th>
-                                <th>CNPJ</th>
+                                <th>Email</th>
+                                <th>Senha</th>
                                 <th>Ações</th>
                             </tr>
                         </thead>
-
 
                         <tbody>
 
@@ -40,25 +40,17 @@
 
                             include("func_crud.php");
 
-                            $arrayCorretoras = listar_corret();
+                            $arrayClientes = listar_clientes();
 
-                            foreach ($arrayCorretoras as $corret) {
+                            foreach ($arrayClientes as $client) {
                                 echo "<tr>";
-                                echo "<td>" . $corret->cod . "</td>";
-                                echo "<td>" . $corret->nome . "</td>";
-                                echo "<td>" . $corret->cnpj . "</td>";
-
+                                echo "<td>" . $client->id . "</td>";
+                                echo "<td>" . $client->email . "</td>";
+                                echo "<td>" . $client->senha . "</td>";
                                 echo "<td>";
-                                echo "<a href='exibir_corretora.php?id=" . $corret->cod . "'>";
-                                echo "<span class='fa-stack fa-sm' style='color:white'><i class='fas fa-search'></i></span>";
-                                echo "</a>";
-                                echo "<a href='editar_corretora_parte1.php?id=" . $corret->cod . "'>";
-                                echo "<span class='fa-stack fa-sm' style='color:white'><i class='fas fa-edit'></i></span>";
-                                echo "</a>";
-                                echo "<a href='excluir_corretora_parte1.php?id=" . $corret->cod . "'>";
+                                echo "<a href='excluir_cliente_parte1.php?id=" . $client->id . "'>";
                                 echo "<span class='fa-stack fa-sm' style='color:white'><i class='fas fa-trash'></i></span>";
                                 echo "</a>";
-                                echo "</td>";
                                 echo "</tr>";
                             }
 

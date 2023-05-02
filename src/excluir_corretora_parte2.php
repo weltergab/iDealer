@@ -3,9 +3,10 @@
 
 <head>
 	<meta charset="utf-8">
-	<link rel="stylesheet" href="style.css">
-	<title>Edição de Corretoras</title>
+	<title>Exclusão de Corretoras</title>
 	<script defer src="fontawesome/js/all.js"></script>
+
+
 	<link href="../dist/output.css" rel="stylesheet">
 </head>
 
@@ -16,20 +17,17 @@
 				<div class="divGeral1">
 					<div class="divGeral2">
 						<div>
-
 							<?php
 
 							include("func_crud.php");
 
-							if (isset($_GET["id"]) == true && isset($_GET["nome"]) == true && isset($_GET["cnpj"]) == true) {
-								$id = $_GET["id"];
-								$nome = $_GET["nome"];
-								$cnpj = $_GET["cnpj"];
-								editar_corretora($id, $nome, $cnpj);
+							if (isset($_GET["id"]) == true) {
+								$corretora_cod = $_GET["id"];
+								excluir_corretora($corretora_cod);
 
-								echo "<br><br><a class='link2' href='listar_corret.php'>Listar Corretoras</a> ";
+								echo "<br><br><a href='listar_corret.php' class='link2'>Listar Corretoras</a> ";
 							} else {
-								echo "Houve algum erro!!! Você deve informar o título da categoria.";
+								echo "Houve algum erro!!! Você deve informar o ID da corretora.";
 							}
 
 							?>
@@ -39,6 +37,7 @@
 			</div>
 		</div>
 	</div>
+
 </body>
 
 <?php

@@ -1,3 +1,114 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+    @apply bg-gray-900 text-gray-100;
+    /* -webkit-font-smoothing: antialiased; */
+}
+h1 {
+    @apply text-[2.5rem] leading-tight font-bold;
+}
+h2 {
+    @apply mt-4 text-gray-200 leading-relaxed font-bold;
+}
+p {
+    @apply mt-2 mb-1 text-gray-200 leading-relaxed;
+}
+label {
+    @apply text-gray-200 leading-relaxed;
+}
+span, i {
+    @apply text-center;
+}
+
+
+.divGeral1 {
+    @apply min-h-screen bg-blur bg-cover bg-no-repeat flex flex-col items-center;
+}
+.divGeral2 {
+    @apply max-w-[1100px] w-full flex items-center justify-between mt-20 mx-auto mb-20;
+}
+
+.formBoxFora2 {
+    @apply p-10 bg-gray-700 border border-gray-500 rounded;
+}
+.formBoxFora3 {
+    @apply flex flex-col gap-2 p-10 bg-gray-700 border border-gray-500 rounded;
+}
+
+
+
+.formBoxFora1 {
+    @apply p-8 max-w-[350px] w-full bg-gray-700 border border-gray-500 rounded;
+}
+.formStyle1 {
+    @apply flex flex-col gap-2 w-full;
+}
+
+.link1 {
+    @apply max-w-[700px] flex items-center p-4 text-sm bg-green-500 rounded font-bold uppercase gap-2 justify-center hover:bg-green-700 transition-colors;
+}
+.link2 {
+    @apply max-w-[600px] p-4 text-sm border border-blue-500 text-blue-500 flex items-center rounded font-bold uppercase gap-2 justify-center hover:bg-blue-500 hover:text-green-900 transition-colors;
+}
+.link1p {
+    @apply max-w-[150px] flex items-center p-4 text-sm bg-green-500 rounded font-bold uppercase gap-2 justify-center hover:bg-green-700 transition-colors;
+}
+.link2p {
+    @apply max-w-[150px] p-4 text-sm border border-blue-500 text-blue-500 flex items-center rounded font-bold uppercase gap-2 justify-center hover:bg-blue-500 hover:text-green-900 transition-colors;
+}
+.link2x {
+    @apply max-w-[82px] p-4 text-sm border border-blue-500 text-blue-500 flex items-center rounded font-bold uppercase gap-2 justify-center hover:bg-blue-500 hover:text-green-900 transition-colors;
+}
+
+thead, tbody, tfoot {
+
+}
+table, th, td {
+    @apply border border-solid border-gray-100 text-center p-3;
+}
+table {
+    @apply border-collapse;
+}
+input {
+    @apply bg-gray-900 rounded px-6 h-14;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.button1 {
+    @apply mt-4 bg-green-500 uppercase py-4 rounded font-bold text-sm hover:bg-green-700 transition-colors disabled:opacity-50;
+}
+.button2 {
+
+}
+/* .inp1 {
+    @apply bg-gray-900 rounded px-5 h-14;
+} */
+.title1 {
+
+}
+.text1 {
+    @apply font-bold;
+}
+
+
+
+
+
+.box1 {
+    @apply max-w-[400px] flex flex-col justify-between mt-20;
+}
+.box2 {
+    @apply max-w-[500px] flex flex-col justify-between mt-20;
+}
