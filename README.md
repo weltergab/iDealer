@@ -1,5 +1,4 @@
-��#� �i�D�e�a�l�e�r�
-�
+Plataforma de Investimentos - iDealer
 ![image](https://user-images.githubusercontent.com/62655532/235814192-59726e39-e0ac-4ca8-a645-f00ba286df4c.png)
 ![image](https://user-images.githubusercontent.com/62655532/235814123-18f30f25-a06f-48ff-98cf-8af1173fed76.png)
 
@@ -11,9 +10,6 @@
 
 ![image](https://user-images.githubusercontent.com/62655532/235814371-852eb0e5-debb-4427-947e-27f2b6d69e06.png)
 ![image](https://user-images.githubusercontent.com/62655532/235814396-14e71b7a-a603-4abf-bfee-77a5db69b98e.png)
-![image](https://user-images.githubusercontent.com/62655532/235814423-62fb8b39-d8da-495c-985b-1de480952055.png)
-
-![image](https://user-images.githubusercontent.com/62655532/235814456-21d69cb9-253b-4237-a463-93eeba20725a.png)
 
 ![image](https://user-images.githubusercontent.com/62655532/235814554-2567b815-69b5-4c13-b55c-8718868915ec.png)
 ![image](https://user-images.githubusercontent.com/62655532/235814671-403e2149-5d8e-43eb-b56f-d46174b2ee43.png)
