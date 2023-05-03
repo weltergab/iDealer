@@ -2,14 +2,14 @@
     "version": 2,
     "builds": [
         {
-            "src": "src/index.php",
+            "src": "src/conexao_banco.php",
             "use": "@vercel/node"
         }
     ],
     "routes": [
         {
             "src": "(.*)",
-            "dest": "src/index.php"
+            "dest": "src/conexao_banco.php"
         }
     ]
 }
