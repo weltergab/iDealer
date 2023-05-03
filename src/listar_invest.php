@@ -39,7 +39,8 @@
 
                         include("func_crud.php");
                         session_start();
-                        $con = new mysqli("localhost", "root", "", "investimentos");
+                        require('conexao_banco.php');
+                        $con = $conexao;
 
                         if ($con->connect_error) {
                             die("Falha na conexão: " . $con->connect_error);

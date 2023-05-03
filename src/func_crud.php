@@ -1,7 +1,9 @@
 <?php
+require('conexao_banco.php');
 
     function cadastrar_corretora($name, $cnpj){
-        $conn = new mysqli("localhost", "root", "", "investimentos");
+        require('conexao_banco.php');
+        $conn = $conexao;
 
         if ( $conn->connect_error ){
             die("Falha na conexão: " . $conn->connect_error );
@@ -19,7 +21,8 @@
     }
 
     function listar_corret(){
-        $conn = new mysqli("localhost", "root", "", "investimentos");
+        require('conexao_banco.php');
+        $conn = $conexao;
 
         if ( $conn->connect_error ){
             die("Falha na conexão: " . $conn->connect_error );
@@ -41,7 +44,8 @@
     }
 
     function listar_clientes(){
-        $conn = new mysqli("localhost", "root", "", "investimentos");
+        require('conexao_banco.php');
+        $conn = $conexao;
 
         if ( $conn->connect_error ){
             die("Falha na conexão: " . $conn->connect_error );
@@ -64,7 +68,8 @@
 
 
     function listar_invest(){
-        $conn = new mysqli("localhost", "root", "", "investimentos");
+        require('conexao_banco.php');
+        $conn = $conexao;
 
         if ( $conn->connect_error ){
             die("Falha na conexão: " . $conn->connect_error );
@@ -86,7 +91,8 @@
     }
 
     function listar_tudo(){
-        $conn = new mysqli("localhost", "root", "", "investimentos");
+        require('conexao_banco.php');
+        $conn = $conexao;
 
         if ( $conn->connect_error ){
             die("Falha na conexão: " . $conn->connect_error );
@@ -108,7 +114,8 @@
     }
 
     function editar_corretora($id, $nome, $cnpj){
-        $conn = new mysqli("localhost", "root", "", "investimentos");
+        require('conexao_banco.php');
+        $conn = $conexao;
 
         if ( $conn->connect_error ) {
             die("Falha na conexão: " . $conn->connect_error );
@@ -126,7 +133,8 @@
     }
 
     function editar_inv($id, $cod, $nome, $preco, $qtd, $data, $preco_hj){
-        $conn = new mysqli("localhost", "root", "", "investimentos");
+        require('conexao_banco.php');
+        $conn = $conexao;
 
         if ( $conn->connect_error ) {
             die("Falha na conexão: " . $conn->connect_error );
@@ -144,7 +152,8 @@
     }
 
     function pegar_corret($id){
-        $conn = new mysqli("localhost", "root", "", "investimentos");
+        require('conexao_banco.php');
+        $conn = $conexao;
 
         if ( $conn->connect_error ){
             die("Falha na conexão: " . $conn->connect_error );
@@ -164,7 +173,8 @@
     }
 
     function pegar_inv($id){
-        $conn = new mysqli("localhost", "root", "", "investimentos");
+        require('conexao_banco.php');
+        $conn = $conexao;
 
         if ( $conn->connect_error ){
             die("Falha na conexão: " . $conn->connect_error );
@@ -184,7 +194,8 @@
     }
 
     function pegar_cliente($id){
-        $conn = new mysqli("localhost", "root", "", "investimentos");
+        require('conexao_banco.php');
+        $conn = $conexao;
 
         if ( $conn->connect_error ){
             die("Falha na conexão: " . $conn->connect_error );
@@ -204,7 +215,8 @@
     }
 
     function excluir_corretora($id){
-        $conn = new mysqli("localhost", "root", "", "investimentos");
+        require('conexao_banco.php');
+        $conn = $conexao;
     
         if ( $conn->connect_error ) {
             die("Falha na conexão: " . $conn->connect_error );
@@ -222,7 +234,8 @@
     }
 
     function excluir_cliente($id){
-        $conn = new mysqli("localhost", "root", "", "investimentos");
+        require('conexao_banco.php');
+        $conn = $conexao;
     
         if ( $conn->connect_error ) {
             die("Falha na conexão: " . $conn->connect_error );
@@ -241,7 +254,8 @@
 
     
     function excluir_investimento($id){
-        $conn = new mysqli("localhost", "root", "", "investimentos");
+        require('conexao_banco.php');
+        $conn = $conexao;
     
         if ( $conn->connect_error ) {
             die("Falha na conexão: " . $conn->connect_error );

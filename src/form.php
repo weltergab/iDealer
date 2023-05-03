@@ -26,12 +26,13 @@
 
 
             <?php
+            require('conexao_banco.php');
             session_start();
             if (isset($_SESSION['user'])) {
                 header('Location: index.php');
             } else {
                 if (isset($_POST['logar'])) {
-                    $con = mysqli_connect("localhost", "root", "", "investimentos");
+                    $con = $conexao;
 
                     if (!$con) {
                         echo "Error: " . mysqli_connect_errno();
