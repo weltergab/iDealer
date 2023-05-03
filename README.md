@@ -1,6 +1,12 @@
 Plataforma de Investimentos - iDealer
 
 
+Carteira de Investimentos.
+Site para organizar investimentos realizado como trabalho final da disciplina de Programação Web da UFSM. Foi desenvolvido com HTML, CSS, Tailwindcss, PHP, MySQL. Bernardo Gatto foi responsável pelo Backend.
+
+
+
+
 ![image](https://user-images.githubusercontent.com/62655532/235814192-59726e39-e0ac-4ca8-a645-f00ba286df4c.png)
 ![image](https://user-images.githubusercontent.com/62655532/235814123-18f30f25-a06f-48ff-98cf-8af1173fed76.png)
 ![image](https://user-images.githubusercontent.com/62655532/235814235-33269f0b-8781-4b4b-9461-8b7d84ea42e7.png)
