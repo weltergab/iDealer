@@ -1,4 +1,4 @@
-Carteira de Investimentos - iDealer
+### Carteira de Investimentos - iDealer
 
 
 Site para organizar investimentos realizado como trabalho final da disciplina de Programação Web da UFSM. Foi desenvolvido com HTML, CSS, Tailwindcss, PHP, MySQL. Bernardo Gatto foi responsável pelo Back-end.
