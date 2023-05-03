@@ -3,6 +3,7 @@
 
 Site para organizar investimentos com banco de dados, realizado como trabalho final da disciplina de Programação Web da UFSM. Foi desenvolvido com HTML, CSS, Tailwindcss, PHP, MySQL. Bernardo Gatto foi responsável pelo Back-end.
 
+É necessário XAMPP. Coloque o código dentro de htdocs, crie o banco de dados e execute o XAMPP.
 
 
 
